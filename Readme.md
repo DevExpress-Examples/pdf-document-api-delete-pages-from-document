@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Program.cs](./CS/PdfDeletePageExample/Program.cs) (VB: [Program.vb](./VB/PdfDeletePageExample/Program.vb))
+<!-- default file list end -->
 # How to delete pages from PDF
 
 
