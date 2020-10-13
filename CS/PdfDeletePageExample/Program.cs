@@ -4,15 +4,17 @@ using DevExpress.Pdf;
 // ...
 #endregion #Reference
 
-namespace PdfDeletePageExample {
+namespace PdfDeletePageExample
+{
     #region #Code
-    class Program {
-        static void Main(string[] args) 
+    class Program
+    {
+        static void Main(string[] args)
         {
-            using (PdfDocumentProcessor pdfDocumentProcessor = new PdfDocumentProcessor()) 
+            using (PdfDocumentProcessor pdfDocumentProcessor = new PdfDocumentProcessor())
             {
                 pdfDocumentProcessor.LoadDocument("..\\..\\docs\\TextDelete.pdf");
-                for (int i = pdfDocumentProcessor.Document.Pages.Count-1; i > 0; i--)
+                for (int i = pdfDocumentProcessor.Document.Pages.Count; i > 0; i--)
                     if (i % 2 != 0)
                     {
                         pdfDocumentProcessor.DeletePage(i);
