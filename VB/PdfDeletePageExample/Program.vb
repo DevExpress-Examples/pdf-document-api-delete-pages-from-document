@@ -9,7 +9,7 @@ Namespace PdfDeletePageExample
 		Shared Sub Main(ByVal args() As String)
 			Using pdfDocumentProcessor As New PdfDocumentProcessor()
 				pdfDocumentProcessor.LoadDocument("..\..\docs\TextDelete.pdf")
-				For i As Integer = pdfDocumentProcessor.Document.Pages.Count-1 To 0 Step -1
+				For i As Integer = pdfDocumentProcessor.Document.Pages.Count-1 To 0+1 Step -1
 					If i Mod 2 <> 0 Then
 						pdfDocumentProcessor.DeletePage(i)
 					End If
