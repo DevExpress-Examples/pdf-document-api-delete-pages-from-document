@@ -2,7 +2,7 @@
 Imports DevExpress.Pdf
 
 ' ...
-#End Region  ' #Reference
+#End Region
 Namespace PdfDeletePageExample
 
 #Region "#Code"
@@ -10,16 +10,15 @@ Namespace PdfDeletePageExample
 
         Shared Sub Main(ByVal args As String())
             Using pdfDocumentProcessor As PdfDocumentProcessor = New PdfDocumentProcessor()
-                pdfDocumentProcessor.LoadDocument("..\..\docs\TextDelete.pdf")
+                pdfDocumentProcessor.LoadDocument("..\..\..\docs\TextDelete.pdf")
                 For i As Integer = pdfDocumentProcessor.Document.Pages.Count To 0 + 1 Step -1
                     If i Mod 2 <> 0 Then
                         pdfDocumentProcessor.DeletePage(i)
                     End If
                 Next
-
-                pdfDocumentProcessor.SaveDocument("..\..\docs\Deleted.pdf")
+                pdfDocumentProcessor.SaveDocument("..\..\..\docs\Deleted.pdf")
             End Using
         End Sub
     End Class
-#End Region  ' #Code
+#End Region
 End Namespace
