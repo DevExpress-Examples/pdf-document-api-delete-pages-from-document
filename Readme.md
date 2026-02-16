@@ -9,7 +9,7 @@
 
 This example illustrates how to use [PDF Document API](https://docs.devexpress.com/OfficeFileAPI/16491/pdf-document-api) to delete pages from PDF files.
 
-In this example, the [PdfDocumentProcessor.DeletePage](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.DeletePage(System.Int32)?v=24.2) method is called 55 times to delete each odd-numbered page in the <strong>TextDelete</strong> document (contains 109 pages) starting from the last odd-numbered page. 
+In this example, the [PdfDocumentProcessor.DeletePage](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.DeletePage(System.Int32)) method is called 55 times to delete each odd-numbered page in the <strong>TextDelete</strong> document (contains 109 pages) starting from the last odd-numbered page. 
 
 The result is saved to the <strong>Deleted</strong> document, which contains only even pages, by the [PdfDocumentProcessor.SaveDocument](https://docs.devexpress.com/OfficeFileAPI/devexpress.pdf.pdfdocumentprocessor.savedocument.overloads) method call.
 
@@ -30,4 +30,5 @@ The result is saved to the <strong>Deleted</strong> document, which contains onl
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
 
